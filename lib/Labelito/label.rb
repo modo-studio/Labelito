@@ -7,7 +7,7 @@ module Labelito
     end
 
     def self.from_github_label(label)
-      Label.new label.name, label.color
+      Label.new label[:name], label[:color]
     end
 
   end
