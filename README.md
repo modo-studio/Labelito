@@ -32,8 +32,13 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/Labelito. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/carambalabs/Labelito. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
+## References
+
+- Octokit. Ruby client: [Link](https://github.com/octokit/octokit.rb)
+- rspec-mocks: [Link](http://rspec.info/documentation/3.5/rspec-mocks/)
+- rspecs-expectations: [Link](http://rspec.info/documentation/3.5/rspec-expectations/)
 
 ## License
 

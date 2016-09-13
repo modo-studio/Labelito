@@ -3,8 +3,12 @@ require 'octokit'
 module Labelito
   class GithubClient
 
-    def initialize(token = "ad6e42645b1d2f384edcad3c104f93ab21f10fd1")
+    def initialize(token)
       @client = Octokit::Client.new(:access_token => token)
+    end
+
+    def self.with_octokit_client(client)
+      @client = client
     end
 
     def labels(repository)
