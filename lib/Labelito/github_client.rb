@@ -4,12 +4,12 @@ require_relative "label"
 module Labelito
   class GithubClient
 
-    def initialize(token)
-      @client = Octokit::Client.new(:access_token => token)
+    def initialize(client)
+      @client = client
     end
 
-    def self.with_octokit_client(client)
-      @client = client
+    def self.with_token(token)
+      GithubClient.new Octokit::Client.new(:access_token => token)
     end
 
     def labels(repository)
