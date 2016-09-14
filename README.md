@@ -1,8 +1,14 @@
 # Labelito
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/Labelito`. To experiment with that code, run `bin/console` for an interactive prompt.
+Labelito is a command line tool written in Ruby that automates the label creation on GitHub. It currently supports two ways of creating the labels:
 
-TODO: Delete this and the text above, and describe your gem
+- Cloning them from an existing repository.
+- Reading them from a template.
+
+## TODO
+- [ ] Check if dependencies can be injected at runtime *(for testing)*.
+- [ ] Test `tool.rb`
+- [ ] Test `github_client.rb`
 
 ## Installation
 
