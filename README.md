@@ -5,10 +5,9 @@ Labelito is a command line tool written in Ruby that automates the label creatio
 - Cloning them from an existing repository.
 - Reading them from a template.
 
-## TODO
-- [ ] Check if dependencies can be injected at runtime *(for testing)*.
-- [ ] Test `tool.rb`
-- [ ] Test `github_client.rb`
+**Example cloning [CocoaPods](https://cocoapods.org) labels**
+
+![example](assets/example.gif)
 
 ## Installation
 
@@ -28,7 +27,18 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```bash
+Commands:
+  labelito clone FROM_OWNER/FROM_REPO TO_OWNER/TO_REPO  # clone the labels from an existing repository
+  labelito create TEMPLATE_PATH REPO_OWNER/REPO         # create labels on a repository based on a template
+  labelito help [COMMAND]                               # Describe available commands or one specific command
+```
+
+You can specify the GitHub token by:
+
+- Passing a parameter `github_token`
+- Defining an environment variable `LABELITO_GITHUB_TOKEN`
+
 
 ## Development
 
