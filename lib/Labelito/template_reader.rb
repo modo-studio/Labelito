@@ -7,6 +7,7 @@ module Labelito
 
     def read(path)
       raise Errors::TemplateNotFound unless File.exists?(path)
+      puts "=> Fetching labels"
       YAML::load_file(path).map do |element|
         raise Errors::InvalidFormat unless element["name"] && element["color"]
         Label.new element["name"], element["color"]

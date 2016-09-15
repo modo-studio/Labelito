@@ -13,6 +13,7 @@ module Labelito
     end
 
     def labels(repository)
+      puts "=> Fetching labels"
       @client.labels(repository).map do |label|
         Label.from_github_label(label)
       end
@@ -20,8 +21,13 @@ module Labelito
 
     def update(labels, repository)
       old_labels = @client.labels(repository)
-      old_labels.each { |label| @client.delete_label(repository, label[:name]) }
+      puts "=> Deleting existing labels"
+      old_labels.each { |label|
+        puts "==> Deleting label #{label[:name]}"
+        @client.delete_label!(repository, label[:name])
+      }
       labels.each do |label|
+        puts "==> Creating label #{label.name}"
         @client.add_label(repository, label.name, label.color)
       end
     end

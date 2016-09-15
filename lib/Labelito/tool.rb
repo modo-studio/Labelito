@@ -11,7 +11,7 @@ module Labelito
     end
 
     def self.with_token(token)
-      Tool.new GithubClient.new(token), TemplateReader.new
+      Tool.new GithubClient.with_token(token), TemplateReader.new
     end
 
     def clone(from_repo, to_repo)

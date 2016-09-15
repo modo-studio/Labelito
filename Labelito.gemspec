@@ -9,7 +9,6 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Pedro Piñera Buendía"]
   spec.email         = ["pepi@caramba.io"]
   spec.summary       = %q{Command line tool for automating GitHub labels creation.}
-  # spec.description   = %q{TODO: Write a longer description or delete this line.}
   spec.homepage      = "https://caramba.io"
   spec.license       = "MIT"
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
@@ -20,6 +19,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "octokit",  "~> 4.3"
   spec.add_dependency "colorize", "~> 0.8"
   spec.add_dependency "thor",     "~> 0.19"
+  spec.add_development_dependency "byebug"
   spec.add_development_dependency "bundler", "~> 1.12"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
