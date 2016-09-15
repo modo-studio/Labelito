@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'Labelito/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "Labelito"
+  spec.name          = "labelito"
   spec.version       = Labelito::VERSION
   spec.authors       = ["Pedro Piñera Buendía"]
   spec.email         = ["pepi@caramba.io"]
