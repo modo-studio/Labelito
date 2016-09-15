@@ -1,5 +1,8 @@
 # Labelito
 
+[![Build Status](https://travis-ci.org/carambalabs/Labelito.svg?branch=master)](https://travis-ci.org/carambalabs/Labelito)
+[![Dependency Status](https://gemnasium.com/badges/github.com/carambalabs/Labelito.svg)](https://gemnasium.com/github.com/carambalabs/Labelito)
+
 Labelito is a command line tool written in Ruby that automates the label creation on GitHub. It currently supports two ways of creating the labels:
 
 - Cloning them from an existing repository.
